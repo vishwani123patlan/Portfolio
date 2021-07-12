@@ -1,0 +1,188 @@
+// Place all the styles related to the profiles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.main-header{
+  height: 500px;
+  h2{
+  text-transform: uppercase;
+  margin-top: 80px;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 1.4;
+  color: white;
+  .sirname{
+  color: #2d90e6;
+  }
+  }
+  h3{
+  margin-top: 10px;
+  font-size: 20px;
+  }
+}
+
+.image-div{
+  margin-top:-280px;
+}
+
+.main_head_section{
+  background-color: #521634b5;
+}
+
+.myImage{
+  width:100%;
+  height: auto;
+  border: 15px solid #521634;
+}
+
+.about_me_section{
+  margin-top: 20em;
+  background: #521634b5;
+}
+
+.skills_section{
+  margin-top: 20em;
+  padding-top: 4em;
+  padding-bottom: 5em;
+  background: #521634b5;
+}
+
+.education_section{
+  margin-top: 20em;
+  background: #521634b5;
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+.thumbnail_img{
+  max-width: 40% !important;
+  border-radius: 50% !important;
+}
+.about_me_data{
+  width: fit-content;
+  h6{
+    color: #2d90e6;
+    font-size: large;
+    width: fit-content;
+  }
+  h1{
+    color: #e0d10c;
+    width: fit-content;
+  }
+  p{
+  width:78%;
+  max-width:fit-content;
+  color: white;
+  font-size: 23px;
+  }
+  .bio_title{
+  color: #2d90e6;
+  }
+}
+
+.about_row{
+  margin-top: 7em !important;
+  margin-bottom: 7em !important;
+}
+
+.know_more_button{
+  margin: 20px auto;
+  border: none;
+  padding: 10px 44px;
+  font-size: 36px;
+  color: white;
+  position: relative;
+  height: 12%;
+  padding-top: 10px !important;
+  i{
+  padding-left:10px;
+  }
+  &::before{
+    transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    content: '';
+    width: 50%;
+    height: 100%;
+    background: #2d90e6;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  & .btn-text{
+    color: white;
+    // check out mdn docs for different types of blend modes. 
+    mix-blend-mode: color-dodge;
+  }
+  &:hover{
+    &::before{
+      background: #2d90e6;
+      width: 100%;
+    }
+  }
+}
+
+.skill_block{
+  background: #b4c1d4;
+  border-radius:40px 40px 200px;
+}
+
+.tool_block{
+  background: #b4c1d4;
+  border-radius:40px 40px 200px;
+}
+
+.skill{
+  height: 20px;
+  border-radius: 10px;
+  text-align:right;
+  background-color: #126dca;
+  padding-right:10px;
+}
+
+.skill1{
+  width: 80%;
+}
+
+.skill2{
+  width: 80%;
+}
+
+.skill3{
+  width: 75%;
+}
+
+.skill4{
+  width: 70%;
+}
+
+.skill5{
+  width: 50%;
+}
+
+.skill6{
+  width: 60%;
+  margin-bottom:4px;
+}
+
+.tools_size{
+  width:40%;
+}
+
+.sublime{
+  float: right;
+  margin-right: 50px !important;
+  margin-top:10px !important;
+}
+
+.github{
+  float: right;
+  margin-right: 50px !important;
+}
+
+.vscode{
+  margin-left: 50px !important;
+}
+
+.jira{
+  margin-left: 50px !important;
+}
