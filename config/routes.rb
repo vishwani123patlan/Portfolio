@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :posts
+  devise_for :users
   get 'profiles/index'
   root to: "profiles#index"
   get '/about', to: 'profiles#about'

@@ -30,3 +30,6 @@ $(function() {
   AOS.init();
 });
 
+
+require("trix")
+require("@rails/actiontext")
