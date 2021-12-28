@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
 .main-profile-part{
-  height: 759px;
+  min-height: 759px;
   background: #ADF2BC;
   .profile-name{
     margin-top: 155px;
@@ -41,8 +41,7 @@
   .my-images{
     margin-top: 156px;
     .my-display-image {
-      margin-top: -595px;
-      margin-left: 85px;
+      margin-left: 50px;
     }
   }
 }
@@ -54,18 +53,17 @@
     color: #CF3B70;
   }
   .project-details{
-    height: 504px;
+    min-height: 504px;
     background: #9fbcd1;
     #carouselExampleControls{
       .carousel-inner{
         .carousel-item{
           .row{
             .project-img{
-              img{
-                margin-left: 30px;
-              }
+              margin-left: 30px;
             }
             .project-data{
+              margin-left: 2em;
               a{
                 text-decoration: none;
                 color: #5d5d5df2;
@@ -74,6 +72,7 @@
                 font-size: 22px;
                 margin-top: 30px;
                 color: #fff;
+                margin-left: 2em;
               }
             }
           }
@@ -106,6 +105,57 @@
   }
 }
 
+@media screen and (max-width: 1750px) {
+  .main-profile-part{
+    .profile-name{
+      margin-left: 158px;
+      font-size: 70px;
+    }
+    .my-desc{
+      margin-left: 160px;
+      h6{
+        font-size: 27px;
+      }
+      width: 550px;
+    }
+    .profile-buttons{
+      margin-left: 150px;
+    }
+    .my-images{
+      margin-top: 156px;
+      margin-left: 0;
+      width: 95%;
+      .my-display-image {
+        margin-left: 30px;
+        width: 90%
+      }
+    }
+  }
+  .projects{
+    margin-top: 18em;
+    .project-details{
+      #carouselExampleControls{
+        .carousel-inner{
+          .carousel-item{
+            .row{
+              .project-img{
+                img{
+                  width: 110%;
+                  height: 22em;
+                }
+              }
+              .project-data{
+                .project-description{
+                  font-size: 20px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
 
 
 .main-header{
