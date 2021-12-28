@@ -1,32 +1,83 @@
-<div>
-  <section>
-    <div class="container-fluid text-md-start mt-5">
-      <div class="row main_head_section">
-        <div class="col-md-12 col-lg-12 col-sm-12 col-xl-12 main-header">
-          <div style="width: fit-content;margin:0 auto;" data-aos="zoom-in">
-            <h2 class="text-center name">VISHWANI <span class="sirname">PATLAN</span></h2>
-            <h3 class="text-center">I'm a web developer.</h3>
-          </div>
-        </div>
+<div class="wrapper main-profile-part">
+  <div class="row">
+    <div class="col-7">
+      <div class="profile-name">
+        <span>Hii...</span><br>
+        <span>I'M <span class="my-name">VISHWANI</span>!</span>
+      </div>
+      <div class="my-desc">
+        <h6>I am Ruby on Rails Developer, I work  to create morden world websites.</h6>
+      </div>
+      <div class="profile-buttons">
+        <a href="#" class="btn">Know More</a>
+        <a href="#" class="btn">Contact Me </a>
       </div>
     </div>
-    <div class="col-md-6 col-lg-6 col-sm-12 col-xl-5 mx-auto image-div" >
-      <img  class="myImage" src="<%= asset_path('myimg.jpg') %>" alt="create" />
+    <div class="col-5">
+      <div class="my-images">
+        <img src="<%= asset_path('Rectangle.png')%>" alt="my-rectangle">
+        <img class="my-display-image" src="<%= asset_path('myimg1.png')%>" alt="my-image">
+      </div>
     </div>
-  </section>
+  </div>
+</div>
 
-  <section class="about_me_section" data-aos="fade-down">
-    <%= render 'profiles/about_section' %>
-  </section>
 
-  <section class="skills_section" data-aos="fade-down">
-    <%= render 'profiles/skills_section' %>
-  </section>
+<div class="wrapper projects">
+  <h1 class="text-center mb-4">Projects</h1>
+  <div class="wrapper project-details">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <% @projects.each_with_index do |project, idx| %>
+        <% class_name =  idx==0 ? 'active' : '' %>
+        <div class="carousel-item <%= class_name%>">
+          <div class="row">
+            <div class="col-6 pt-5 project-img">
+              <% if project.photo.present? %>
+                <%= image_tag(project.photo, class:'mt-2 form-image') %>
+              <% else %>
+                <img src="<%= asset_path('santaUI.png') %>">
+              <% end %>
+            </div>
+            <div class="col-6 pt-5 project-data">
+              <h1 class="text-center"><a href="<%= project.url %>" target="_blank"><%= project.name %></a></h1>
+              <div class="project-description">
+                <p><%= project.description %></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <% end %>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</div>
 
-  <section class="container-fluid education_section" data-aos="fade-down">
-    <%= render 'profiles/education' %>
-  </section>
-  <section class="container-fluid blog_section" data-aos="fade-down">
-    <%= render 'profiles/blog_section' %>
-  </section>
+
+<div class="wrapper services">
+  <h1 class="text-center">Services</h1>
+  <div class="wrapper services-details">
+    <div class="row pt-4 services-row">
+      <div class="col-4">
+        <img src="<%= asset_path('developer.png')%>" alt="">
+        <h3>Development</h3>
+      </div>
+      <div class="col-4">
+        <img src="<%= asset_path('Freelancer.png')%>" alt="">
+        <h3>Freelancing</h3>
+      </div>
+      <div class="col-4">
+        <img src="<%= asset_path('consultant.png')%>" alt="">
+        <h3>Consultant</h3>
+      </div>
+    </div>
+  </div>
 </div>

@@ -1,6 +1,14 @@
 .navbar{
-  background: #521634;
-  min-height:100px;
+  background: #C4C4C4;
+  height:96px;
+  .navbar_main_container {
+    .navbar-brand{
+      font-size: 80px;
+      font-weight: bold;
+      font-family: Roboto;
+      color: #CF3B70;
+    }
+  }
 }
 .navbar .navbar_main_container{
   padding: 0;
@@ -20,11 +28,12 @@
   text-align: center;
   font-size: x-large;
   font-weight: 900;
-  color: white;
-} 
+  color: black;
+  margin-right: 40px;
+}
 
 .navbar .navbar_container li a:hover{
-  color: #e4ca06; 
+  color: white;
   trasition: 5000;
 }
 
@@ -39,17 +48,18 @@
 
 .footer{
   margin-top:15%;
-  background: #521634;
+  background: #CF3B70;
 }
 
 .footer-heading h6{
   font-size: 20px;
-  color: #ecece4;
+  color: white;
 }
 
 .footer-heading p{
   font-size: 16px;
-  color: #d4d4c9;
+  font-weight: 500;
+  color: black;
 }
 
 .footer-social-media a{
@@ -60,6 +70,6 @@
 }
 
 .social-heading{
-  color: white;
+  color: black;
   font-size: 20px;
 }

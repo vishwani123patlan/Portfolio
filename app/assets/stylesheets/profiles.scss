@@ -2,6 +2,112 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
+.main-profile-part{
+  height: 759px;
+  background: #ADF2BC;
+  .profile-name{
+    margin-top: 155px;
+    margin-left: 120px;
+    width: 650px;
+    font-size: 90px;
+    font-weight: bold;
+    .my-name{
+      color: #CF3B70;
+    }
+  }
+  .my-desc{
+    margin-top: 20px;
+    margin-left: 130px;
+    h6{
+      font-size: 30px;
+      font-weight: bold;
+    }
+    width: 562px;
+  }
+  .profile-buttons{
+    margin-top: 50px;
+    margin-left: 140px;
+    a{
+      font-size: 25px;
+      color: white;
+      margin-right: 70px;
+      padding-left: 30px;
+      padding-right: 30px;
+      font-weight: bold;
+      background: #CF3B70;
+      border-radius: 10px;
+    }
+  }
+  .my-images{
+    margin-top: 156px;
+    .my-display-image {
+      margin-top: -595px;
+      margin-left: 85px;
+    }
+  }
+}
+.projects{
+  margin-top: 18em;
+  h1{
+    font-size: 4em;
+    font-weight: bold;
+    color: #CF3B70;
+  }
+  .project-details{
+    height: 504px;
+    background: #9fbcd1;
+    #carouselExampleControls{
+      .carousel-inner{
+        .carousel-item{
+          .row{
+            .project-img{
+              img{
+                margin-left: 30px;
+              }
+            }
+            .project-data{
+              a{
+                text-decoration: none;
+                color: #5d5d5df2;
+              }
+              .project-description{
+                font-size: 22px;
+                margin-top: 30px;
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.services{
+  margin-top: 18em;
+  h1{
+    font-size: 4em;
+    font-weight: bold;
+    color: #CF3B70;
+  }
+  .services-details{
+    height: 400px;
+    background: #ADF2BC;
+    .services-row{
+      div{
+        text-align: center;
+        h3{
+          font-size: 2.3em;
+          font-weight: bold;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}
+
+
+
 .main-header{
   height: 500px;
   h2{
@@ -110,7 +216,7 @@
 
   & .btn-text{
     color: white;
-    // check out mdn docs for different types of blend modes. 
+    // check out mdn docs for different types of blend modes.
     mix-blend-mode: color-dodge;
   }
   &:hover{
@@ -197,4 +303,21 @@
 
 .card_blog:hover{
   box-shadow: 5px 5px 20px #521634b5;
+}
+
+.contact-container{
+  border: 5px solid #521b34;
+  background: #b69da9;
+  border-radius: 5px;
+}
+
+.content-contact{
+  h2{
+    font-style: normal;
+    font-variant-caps: all-petite-caps;
+    font-weight: bolder;
+    font-size: xxx-large;
+    margin: 0;
+    padding: 0;
+  }
 }

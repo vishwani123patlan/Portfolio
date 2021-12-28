@@ -9,9 +9,10 @@
          <div data-aos="fade-down">
             <h6 class="bio_title">BIOGRAPHY</h6>
             <h1 class="about_me_title">ABOUT ME</h1>
-            <p>Hi! I am<span class="bio_title"> Vishwani Patlan</span>, a web developer focused on developing best products with good web development experiences. Coding have been my passion since the day I heard about programming. I enjoy creating intuitive and functional websites.
-            I have worked for some of good startup agencies with wonderful teams to create some award winning works. And, I can make this happen for your business as well.</p>
-            <a href="<%= about_path %>" role="button" class="btn know_more_button"><span class="btn-text">Know more about me  <i class="fas fa-long-arrow-alt-right"></i></span></a>
+            <p>Hi! I am<span class="bio_title"> Vishwani Patlan</span>. Being a developer for 1.6+ years, I have been enjoying this journey in which I had learned, participated, and contributed to the various projects that I have been part of. I believe that actual coding is less than 50% of a developer's work. Right from understanding and analyzing the project requirements, I work on various other things to ensure the success of the project. I believe in solving the issue before I start coding. The design, architecture, plan is vital in creating a great stable, and callable product.</p>
+            <%= link_to about_path, method: :get, class: 'btn know_more_button' do %>
+              <span class="btn-text">Know more about me  <i class="fas fa-long-arrow-alt-right"></i></span>
+            <% end %>
           </div>
         </div>
       </div>

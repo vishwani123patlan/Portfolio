@@ -10,3 +10,83 @@
   }
   }
 }
+.about_row_section{
+  padding:2em;
+  padding-bottom: 0;
+  background: #5216346b;
+  border-radius: 20px;
+}
+
+.skill_graph{
+  padding-left: 120px !important;
+  padding-right: 120px !important;
+}
+
+.about_image{
+  width: 80%;
+  border-radius: 50%;
+  object-fit: scale-down;
+}
+
+.skills_div{
+  background-color:#ddd;
+  width:100%;
+  height:20px;
+  border-radius:30px;
+  position:relative;
+  margin-top:0px;
+  margin-bottom: 80px;
+}
+.title-bar{
+  position:absolute;
+  top:-50px;
+  margin:5px;
+}
+.skills_div span {
+  float:right;
+  margin-top:-22px;
+  margin-right:5px;
+}
+
+.skillbar{
+  background-color:#521634;
+  width:0px;
+  border-radius:30px;
+  height:20px;
+}
+
+.tool_background{
+  width: 100% !important;
+  opacity: .8;
+}
+
+.card_itmes{
+  padding:20px;
+}
+
+.about_tool_card{
+  width: 22rem;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.img1 img{
+  width:100% !important;
+  margin-top: 0px;
+  height:12em !important;
+}
+
+.img2 img{
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+  margin-top:-80px;
+  width:50%;
+}
+
+.about_projects .project_list img{
+  width: 30em;
+  border-radius: 10px;
+}

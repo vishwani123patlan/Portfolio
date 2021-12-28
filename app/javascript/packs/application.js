@@ -21,6 +21,7 @@ ActiveStorage.start()
 import 'bootstrap/dist/js/bootstrap'
 import 'bootstrap/dist/css/bootstrap'
 import 'navbar/navbar'
+import 'about/about'
 
 
 import AOS from 'aos';
