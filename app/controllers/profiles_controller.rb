@@ -11,6 +11,17 @@ class ProfilesController < ApplicationController
   end
 
   def contact
+  end
 
+  def send_message
+    if params[:name].present? && params[:email].present? && params[:message].present?
+      if ActionMailer::Base.mail(from: params[:email], to: 'vishwani123patlan@gmail.com', subject: params[:subject], body: params[:message]).deliver
+        @mail_send = true
+      else
+        @mail_send = false
+      end
+    else
+      @mail_send = false
+    end
   end
 end

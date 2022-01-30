@@ -2,60 +2,53 @@
   <h1 class="text-center about_titel">Contact <span>ME <i class="fas fa-arrow-right"></i></span></h1>
 </div>
 
-<div class="container-fluid">
-    <div class="row">
-        <div class="contact-container container mt-5 ms-3 col-md-8">
-          <div class="content-contact">
-            <h2 class="text-center">You can connect with me through email!</h2>
+<div class="container tools-technology">
+  <div class="tools-tech-header">
+    <h2 class="text-center">GET IN TOUCH!</h2>
+  </div>
+  <div id="success-mail-alert" class="alert alert-success container text-center" style="display: none;" role="alert">
+    Your Message Send Successfully!
+  </div>
+  <div id="fail-mail-alert" class="alert alert-danger container text-center" style="display: none;" role="alert">
+    Some Error Occured!
+  </div>
+  <div class="row">
+    <div class="col-md-4 col-lg-4 contact-left">
+      <ul>
+        <li>
+          <h4>DON'T BE SHY !</h4>
+          <p>
+            Feel free to get in touch with me.I am always open
+            to discussing new projects, creative ideas or
+            opportunities to be part of your visions.
+          </p>
+        </li>
+        <li>
+          <span><div><i class="fas fa-home"></i></div><p>ADDRESS</p></span>
+          <p>Sagarpur,New Delhi,110046,India</p>
+        </li>
+        <li>
+          <span><div><i class="fas fa-envelope-open"></i></div><p>MAIL ME</p></span>
+          <p><a href="mailto:vishwani123patlan@gmail.com">vishwani123patlan@gmail.com</a></p>
+        </li>
+        <li>
+          <span><div><i class="fas fa-phone-square-alt"></i></div><p>CALL ME</p></span>
+          <p>+91-8755339910</p>
+        </li>
+        <li>
+          <h6>FOLLOW ME</h6>
+          <div class="social-media">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
           </div>
-        </div>
-        <div class="col-md-4">
-
-        </div>
+        </li>
+      </ul>
     </div>
-</div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-<div>
-  <section>
-    <div class="container-fluid text-md-start mt-5">
-      <div class="row main_head_section">
-        <div class="col-md-12 col-lg-12 col-sm-12 col-xl-12 main-header">
-          <div style="width: fit-content;margin:0 auto;" data-aos="zoom-in">
-            <h2 class="text-center name">VISHWANI <span class="sirname">PATLAN</span></h2>
-            <h3 class="text-center">I'm a web developer.</h3>
-          </div>
-        </div>
-      </div>
+    <div id="contact-form-section" class="col-md-8 col-lg-8 contact-form">
+      <%= render 'contact_form'%>
     </div>
-    <div class="col-md-6 col-lg-6 col-sm-12 col-xl-5 mx-auto image-div" >
-      <img  class="myImage" src="<%= asset_path('myimg.jpg') %>" alt="create" />
-    </div>
-  </section>
-
-  <section class="about_me_section" data-aos="fade-down">
-    <%= render 'profiles/about_section' %>
-  </section>
-
-  <section class="skills_section" data-aos="fade-down">
-    <%= render 'profiles/skills_section' %>
-  </section>
-
-  <section class="container-fluid education_section" data-aos="fade-down">
-    <%= render 'profiles/education' %>
-  </section>
-  <section class="container-fluid blog_section" data-aos="fade-down">
-    <%= render 'profiles/blog_section' %>
-  </section>
+  </div>
 </div>
