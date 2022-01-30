@@ -7,7 +7,7 @@
     margin: 0;
   }
   min-height: 759px;
-  background: #ADF2BC;
+  background: linear-gradient(rgba(44, 75, 110, 1) 30%, rgba(44, 75, 110, 0.37));
   .profile-name{
     margin-top: 155px;
     margin-left: 120px;
@@ -48,16 +48,70 @@
     }
   }
 }
-.projects{
-  margin-top: 18em;
+
+.work-experience-section{
+  margin-top: 10em;
   h1{
     font-size: 4em;
     font-weight: bold;
     color: #CF3B70;
+    font-family: 'Rhodium Libre';
+  }
+  .work-experience-details{
+    min-height: 751px;
+    background: #9fbcd1;
+    padding-top: 4em;
+    .work-image{
+      h1{
+        font-size: 5em;
+        font-weight: bolder;
+        color: #8C5A2C;
+        font-family: 'Krona One';
+      }
+      img{
+        width: 80%;
+        margin-left: 2em;
+      }
+    }
+    .details{
+      h2{
+        font-size: 50px;
+        font-family: 'Rhodium Libre';
+        font-weight: bold;
+        color: #8B1920;
+      }
+      h3{
+        font-size: 35px;
+        font-family: 'Rhodium Libre';
+        color: snow;
+      }
+      p{
+        width: 85%;
+        font-size: 21px;
+        color: #313131;
+        font-family: 'Rhodium Libre';
+        strong{
+          color: black;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+.projects{
+  margin-top: 10em;
+  h1{
+    font-size: 4em;
+    font-weight: bold;
+    color: #CF3B70;
+    font-family: 'Rhodium Libre';
   }
   .project-details{
     min-height: 504px;
-    background: #9fbcd1;
+    background: #ADF2BC;
     #carouselExampleControls{
       .carousel-inner{
         .carousel-item{
@@ -70,13 +124,14 @@
               margin-left: 2em;
               a{
                 text-decoration: none;
-                color: #5d5d5df2;
+                color: #257DBC;
               }
               .project-description{
                 font-size: 22px;
                 margin-top: 30px;
-                color: #fff;
+                color: #4A4A4A;
                 margin-left: 2em;
+                font-family: 'Rhodium Libre';
               }
             }
           }
@@ -87,25 +142,50 @@
 }
 
 .services{
-  margin-top: 18em;
+  margin-top: 10em;
   h1{
     font-size: 4em;
     font-weight: bold;
     color: #CF3B70;
+    font-family: 'Rhodium Libre';
   }
   .services-details{
     .row{
+      padding: 2em;
       margin: 0px;
     }
-    height: 400px;
-    background: #ADF2BC;
+    height: 500px;
+    background: #9fbcd1;
     .services-row{
       div{
         text-align: center;
         h3{
           font-size: 2.3em;
           font-weight: bold;
-          margin-top: 20px;
+          margin-top: 50px;
+          font-family: 'Rhodium Libre';
+        }
+      }
+    }
+  }
+}
+
+.education-section{
+  margin-top: 10em;
+  h1{
+    font-size: 4em;
+    font-weight: bold;
+    color: #CF3B70;
+    font-family: 'Rhodium Libre';
+  }
+  .education-row{
+    background: #ADF2BC;
+    .card{
+      background: linear-gradient(to right, #22c1c3, #fdbb2d);
+      width: 80%;
+      .card-footer{
+        span{
+          color: white;
         }
       }
     }

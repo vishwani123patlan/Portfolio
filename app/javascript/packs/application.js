@@ -9,7 +9,9 @@ import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 import $ from 'jquery';
 import jQuery from 'jquery';
-import "@fortawesome/fontawesome-free/css/all"
+//import "@fortawesome/fontawesome-free/css/all"
+import "@fortawesome/fontawesome-free/js/all";
+import '../css/main.scss'
 window.jQuery = $;
 window.$ = $;
 

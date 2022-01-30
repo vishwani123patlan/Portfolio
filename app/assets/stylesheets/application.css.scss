@@ -21,6 +21,13 @@
   margin-block-start:0;
   margin-block-end:0
  }
+ body::-webkit-scrollbar {
+    display: none;
+ }
+
+ .container{
+   max-width: 1550px !important ;
+ }
 
  .form-signin {
   width: 100%;
