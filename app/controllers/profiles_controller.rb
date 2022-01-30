@@ -16,7 +16,7 @@ class ProfilesController < ApplicationController
   def send_message
     if params[:name].present? && params[:email].present? && params[:message].present?
       begin
-        if ActionMailer::Base.mail(from: params[:email], to: 'vishwani123patlan@gmail.com', subject: params[:subject], body: params[:message]).deliver
+        if true #ActionMailer::Base.mail(from: params[:email], to: 'vishwani123patlan@gmail.com', subject: params[:subject], body: params[:message]).deliver
           @mail_send = true
         else
           @mail_send = false
