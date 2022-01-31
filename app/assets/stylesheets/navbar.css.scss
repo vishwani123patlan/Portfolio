@@ -1,0 +1,350 @@
+.navbar{
+  background: #C4C4C4;
+  .navbar_main_container {
+    .navbar-brand{
+      color: #CF3B70;
+      font-family: Roboto;
+      font-weight: bold;
+    }
+  }
+}
+
+.navbar .navbar_main_container a{
+  text-decoration: none;
+  color: #e4ca06;
+}
+
+.footer{
+  margin-top:15%;
+  background: linear-gradient(rgba(44, 75, 110, 1) 30%, rgba(44, 75, 110, 0.37));;
+}
+
+.footer-heading h6{
+  font-size: 20px;
+  color: white;
+}
+
+.footer-heading p{
+  font-size: 16px;
+  font-weight: 500;
+  color: black;
+}
+
+.footer-social-media a{
+  font-size: 17px;
+  background: #ecece4;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.social-heading{
+  color: black;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar{
+    height:96px;
+    .navbar_main_container {
+      .navbar-brand{
+        font-size: 80px;
+      }
+    }
+  }
+  .navbar .navbar_main_container{
+    padding: 0;
+    max-width: 1650px;
+  }
+  .navbar .navbar_main_container a{
+    font-size: 40px;
+    font-weight: 800;
+  }
+  .navbar .navbar_container a{
+    position: relative;
+    justify-content: space-around;
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    font-size: x-large;
+    font-weight: 900;
+    color: black;
+    margin-right: 40px;
+  }
+
+  .navbar .navbar_container li a:hover{
+    color: white;
+    trasition: 5000;
+  }
+
+  .sign_up_button{
+    width: 150px;
+  }
+
+  .sign_in_button{
+    width: 150px;
+    margin-right: 5px;
+  }
+}
+
+/* For Tablet View */
+@media screen and (min-device-width: 768px)
+and (max-device-width: 1024px) {
+  .navbar{
+    height:96px;
+    .navbar_main_container {
+      .navbar-brand{
+        font-size: 80px;
+      }
+    }
+  }
+  .navbar .navbar_main_container{
+    padding: 0;
+    max-width: 1650px;
+  }
+  .navbar .navbar_main_container a{
+    font-size: 40px;
+    font-weight: 800;
+  }
+  .navbar .navbar_container a{
+    position: relative;
+    justify-content: space-around;
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    font-size: x-large;
+    font-weight: 900;
+    color: black;
+    margin-right: 40px;
+  }
+
+  .navbar .navbar_container li a:hover{
+    color: white;
+    trasition: 5000;
+  }
+}
+
+/* For Mobile Portrait View */
+@media screen and (max-device-width: 480px)
+and (orientation: portrait) {
+  .navbar{
+    height:96px;
+    .navbar_main_container {
+      .navbar-brand{
+        font-size: 60px;
+        margin: 2px 0px 0px 0px;
+      }
+    }
+  }
+  .navbar .navbar_main_container{
+    padding: 0;
+    max-width: 1650px;
+  }
+  .navbar .navbar_main_container a{
+    font-size: 40px;
+    font-weight: 800;
+  }
+  .navbar .navbar_container a{
+    position: relative;
+    justify-content: space-around;
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    font-size: x-large;
+    font-weight: 900;
+    color: black;
+    margin-right: 40px;
+  }
+
+  .navbar .navbar_container li a:hover{
+    color: white;
+    trasition: 5000;
+  }
+}
+
+/* For Mobile Landscape View */
+@media screen and (max-device-width: 640px)
+and (orientation: landscape) {
+  .navbar{
+    height:90px;
+    .navbar_main_container {
+      .navbar-brand{
+        font-size: 60px;
+        margin: 2px 0px 0px 0px;
+      }
+    }
+  }
+  .navbar .navbar_main_container{
+    padding: 0;
+    max-width: auto;
+  }
+  .navbar .navbar_main_container a{
+    font-size: 40px;
+    font-weight: 800;
+  }
+  .navbar .navbar_container a{
+    position: relative;
+    justify-content: space-around;
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    font-size: x-large;
+    font-weight: 900;
+    color: black;
+    margin-right: 40px;
+  }
+
+  .navbar .navbar_container li a:hover{
+    color: white;
+    trasition: 5000;
+  }
+}
+
+/* For Mobile Phones Portrait or Landscape View */
+@media screen and (max-device-width: 640px) {
+  .navbar{
+    height:96px;
+    .navbar_main_container {
+      .navbar-brand{
+        font-size: 80px;
+      }
+    }
+  }
+  .navbar .navbar_main_container{
+    padding: 0;
+    max-width: auto;
+  }
+  .navbar .navbar_main_container a{
+    font-size: 40px;
+    font-weight: 800;
+  }
+  .navbar .navbar_container a{
+    position: relative;
+    justify-content: space-around;
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    font-size: x-large;
+    font-weight: 900;
+    color: black;
+    margin-right: 40px;
+  }
+
+  .navbar .navbar_container li a:hover{
+    color: white;
+    trasition: 5000;
+  }
+}
+
+/* For iPhone 4 Portrait or Landscape View */
+@media screen and (min-device-width: 320px)
+and (-webkit-min-device-pixel-ratio: 2) {
+  .navbar{
+    height:96px;
+    .navbar_main_container {
+      .navbar-brand{
+        font-size: 60px;
+        margin: 2px 0px 0px 0px;
+      }
+    }
+  }
+  .navbar .navbar_main_container{
+    padding: 0;
+    max-width: auto;
+  }
+  .navbar .navbar_main_container a{
+    font-size: 40px;
+    font-weight: 800;
+  }
+  .navbar .navbar_container a{
+    position: relative;
+    justify-content: space-around;
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    font-size: x-large;
+    font-weight: 900;
+    color: black;
+    margin-right: 40px;
+  }
+
+  .navbar .navbar_container li a:hover{
+    color: white;
+    trasition: 5000;
+  }
+}
+
+/* For iPhone 5 Portrait or Landscape View */
+@media (device-height: 568px) and (device-width: 320px)
+and (-webkit-min-device-pixel-ratio: 2) {
+  .navbar{
+    height:96px;
+    .navbar_main_container {
+      .navbar-brand{
+        font-size: 60px;
+        margin: 2px 0px 0px 0px;
+      }
+    }
+  }
+  .navbar .navbar_main_container{
+    padding: 0;
+    max-width: auto;
+  }
+  .navbar .navbar_main_container a{
+    font-size: 40px;
+    font-weight: 800;
+  }
+  .navbar .navbar_container a{
+    position: relative;
+    justify-content: space-around;
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    font-size: x-large;
+    font-weight: 900;
+    color: black;
+    margin-right: 40px;
+  }
+
+  .navbar .navbar_container li a:hover{
+    color: white;
+    trasition: 5000;
+  }
+}
+
+/* For iPhone 6 and 6 plus Portrait or Landscape View */
+@media (min-device-height: 667px) and (min-device-width: 375px)
+and (-webkit-min-device-pixel-ratio: 3) {
+  .navbar{
+    height:96px;
+    .navbar_main_container {
+      .navbar-brand{
+        font-size: 60px;
+        margin: 2px 0px 0px 0px;
+      }
+    }
+  }
+  .navbar .navbar_main_container{
+    padding: 0;
+    max-width: auto;
+  }
+  .navbar .navbar_main_container a{
+    font-size: 40px;
+    font-weight: 800;
+  }
+  .navbar .navbar_container a{
+    position: relative;
+    justify-content: space-around;
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    font-size: x-large;
+    font-weight: 900;
+    color: black;
+    margin-right: 40px;
+  }
+
+  .navbar .navbar_container li a:hover{
+    color: white;
+    trasition: 5000;
+  }
+}
