@@ -6,7 +6,7 @@
   font-weight:bold;
   color: white;
   span{
-  color:#095ca5;
+  color:#5ccaff;
   }
   }
 }
@@ -344,7 +344,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
     font-weight:bold;
     color: white;
     span{
-    color:#095ca5;
+    color:#5ccaff;
     }
     }
   }
@@ -353,11 +353,27 @@ and (-webkit-min-device-pixel-ratio: 2) {
     margin-top: 3em;
     padding-bottom: 3em;
     .tools-tech-header{
-      height: 200px;
+      height: 1500px;
       border-radius:  20px 20px 30px 30px;
       h2{
-        margin-top: 100px;
+        margin-top: 50px;
         font-size: 30px;
+      }
+    }
+    .contact-left{
+      ul{
+        margin-left:  0;
+      }
+    }
+    .contact-form{
+      margin-top: 0px;
+      margin-left: 1.1em;
+      width: 90%;
+      .form-message{
+        height: 10em;
+      }
+      .submit-button{
+        width: 100%;
       }
     }
   }
@@ -375,7 +391,7 @@ and (orientation: portrait) {
     color: white;
     text-align: center;
     span{
-    color:#095ca5;
+    color:#5ccaff;
     }
     }
   }
@@ -383,11 +399,27 @@ and (orientation: portrait) {
     margin-top: 3em;
     padding-bottom: 3em;
     .tools-tech-header{
-      height: 200px;
+      height: 150px;
       border-radius:  20px 20px 30px 30px;
       h2{
-        margin-top: 100px;
+        margin-top: 50px;
         font-size: 30px;
+      }
+    }
+    .contact-left{
+      ul{
+        margin-left:  0;
+      }
+    }
+    .contact-form{
+      margin-top: 0px;
+      margin-left: 1.1em;
+      width: 90%;
+      .form-message{
+        height: 10em;
+      }
+      .submit-button{
+        width: 100%;
       }
     }
   }
@@ -404,7 +436,7 @@ and (-webkit-min-device-pixel-ratio: 3) {
     font-weight:bold;
     color: white;
     span{
-    color:#095ca5;
+    color:#5ccaff;
     }
     }
   }
@@ -413,11 +445,27 @@ and (-webkit-min-device-pixel-ratio: 3) {
     margin-top: 3em;
     padding-bottom: 3em;
     .tools-tech-header{
-      height: 200px;
+      height: 150px;
       border-radius:  20px 20px 30px 30px;
       h2{
-        margin-top: 100px;
+        margin-top: 50px;
         font-size: 30px;
+      }
+    }
+    .contact-left{
+      ul{
+        margin-left:  0;
+      }
+    }
+    .contact-form{
+      margin-top: 0px;
+      margin-left: 1.1em;
+      width: 90%;
+      .form-message{
+        height: 10em;
+      }
+      .submit-button{
+        width: 100%;
       }
     }
   }
