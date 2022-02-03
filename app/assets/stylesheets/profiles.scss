@@ -192,59 +192,6 @@
   }
 }
 
-@media screen and (max-width: 1750px) {
-  .main-profile-part{
-    .profile-name{
-      margin-left: 158px;
-      font-size: 70px;
-    }
-    .my-desc{
-      margin-left: 160px;
-      h6{
-        font-size: 27px;
-      }
-      width: 550px;
-    }
-    .profile-buttons{
-      margin-left: 150px;
-    }
-    .my-images{
-      margin-top: 156px;
-      margin-left: 0;
-      width: 95%;
-      .my-display-image {
-        margin-left: 30px;
-        width: 90%
-      }
-    }
-  }
-  .projects{
-    margin-top: 18em;
-    .project-details{
-      #carouselExampleControls{
-        .carousel-inner{
-          .carousel-item{
-            .row{
-              .project-img{
-                img{
-                  width: 110%;
-                  height: 22em;
-                }
-              }
-              .project-data{
-                .project-description{
-                  font-size: 20px;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-
 .main-header{
   height: 500px;
   h2{
@@ -456,5 +403,122 @@
     font-size: xxx-large;
     margin: 0;
     padding: 0;
+  }
+}
+
+
+//mobile devices
+@media (device-height: 568px) and (device-width: 320px)
+and (-webkit-min-device-pixel-ratio: 2) {
+  .main-profile-part{
+    .profile-name{
+        margin-top: 50px;
+        margin-left: 12px;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .my-desc{
+      margin-left: 12px;
+      width: auto;
+      margin-top: 10px;
+      h6{
+        font-size: 15px;
+      }
+    }
+    .profile-buttons {
+      display: flex;
+      flex-direction: column;
+      margin-top: 50px;
+      margin-left: 0px;
+      a{
+        width: fit-content;
+        margin-right: 0px;
+        padding: 5px;
+        margin-bottom: 5px;
+      }
+    }
+    .my-images {
+      margin-top: 50px;
+      .my-display-image {
+        margin: 0px;
+      }
+    }
+  }
+}
+
+@media screen and (max-device-width: 480px)
+and (orientation: portrait) {
+  .main-profile-part{
+    .profile-name{
+        margin-top: 50px;
+        margin-left: 12px;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .my-desc{
+      margin-left: 12px;
+      width: auto;
+      margin-top: 10px;
+      h6{
+        font-size: 15px;
+      }
+    }
+    .profile-buttons {
+      display: flex;
+      flex-direction: column;
+      margin-top: 50px;
+      margin-left: 0px;
+      a{
+        width: fit-content;
+        margin-right: 0px;
+        padding: 5px;
+        margin-bottom: 5px;
+      }
+    }
+    .my-images {
+      margin-top: 50px;
+      .my-display-image {
+        margin: 0px;
+      }
+    }
+  }
+}
+
+
+@media (min-device-height: 667px) and (min-device-width: 375px)
+and (-webkit-min-device-pixel-ratio: 3) {
+  .main-profile-part{
+    .profile-name{
+        margin-top: 50px;
+        margin-left: 12px;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .my-desc{
+      margin-left: 12px;
+      width: auto;
+      margin-top: 10px;
+      h6{
+        font-size: 15px;
+      }
+    }
+    .profile-buttons {
+      display: flex;
+      flex-direction: column;
+      margin-top: 50px;
+      margin-left: 0px;
+      a{
+        width: fit-content;
+        margin-right: 0px;
+        padding: 5px;
+        margin-bottom: 5px;
+      }
+    }
+    .my-images {
+      margin-top: 50px;
+      .my-display-image {
+        margin: 0px;
+      }
+    }
   }
 }
