@@ -411,6 +411,7 @@
 @media (device-height: 568px) and (device-width: 320px)
 and (-webkit-min-device-pixel-ratio: 2) {
   .main-profile-part{
+    height: 750px;
     .profile-name{
         margin-top: 50px;
         margin-left: 12px;
@@ -427,12 +428,12 @@ and (-webkit-min-device-pixel-ratio: 2) {
     }
     .profile-buttons {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       margin-top: 50px;
       margin-left: 0px;
       a{
         width: fit-content;
-        margin-right: 0px;
+        margin: 12px;
         padding: 5px;
         margin-bottom: 5px;
       }
@@ -441,14 +442,68 @@ and (-webkit-min-device-pixel-ratio: 2) {
       margin-top: 50px;
       .my-display-image {
         margin: 0px;
+        width: 350px
       }
     }
+  }
+  .work-experience-section {
+    margin-top: 8em;
+    h1 {
+      font-size: 3.5em;
+    }
+    .details{
+      h2 {
+        font-size: 46px;
+      }
+      h3{
+        font-size: 27px;
+      }
+      p{
+        width: 100%;
+        font-size: 14px;
+        margin-left: -5px;
+      }
+    }
+  }
+  .work-experience-section {
+    margin-top: 8em;
+    h1 {
+      font-size: 3.5em;
+    }
+    .details{
+      h2 {
+        font-size: 46px;
+      }
+      h3{
+        font-size: 27px;
+      }
+      p{
+        width: 100%;
+        font-size: 14px;
+        margin-left: -5px;
+      }
+    }
+  }
+  .projects{
+    margin-top: 8em;
+    h1{
+      font-size: 3.5em;
+    }
+    .project-img{
+      .form-image{
+        width: 300px;
+      }
+    }
+  }
+  .projects .project-details #carouselExampleControls .carousel-inner .carousel-item .row .project-data {
+    margin-left: 0em;
   }
 }
 
 @media screen and (max-device-width: 480px)
 and (orientation: portrait) {
   .main-profile-part{
+    height: 750px;
     .profile-name{
         margin-top: 50px;
         margin-left: 12px;
@@ -465,12 +520,12 @@ and (orientation: portrait) {
     }
     .profile-buttons {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       margin-top: 50px;
       margin-left: 0px;
       a{
         width: fit-content;
-        margin-right: 0px;
+        margin: 12px;
         padding: 5px;
         margin-bottom: 5px;
       }
@@ -479,8 +534,61 @@ and (orientation: portrait) {
       margin-top: 50px;
       .my-display-image {
         margin: 0px;
+        width: 350px
       }
     }
+  }
+  .work-experience-section {
+    margin-top: 8em;
+    h1 {
+      font-size: 3.5em;
+    }
+    .details{
+      h2 {
+        font-size: 46px;
+      }
+      h3{
+        font-size: 27px;
+      }
+      p{
+        width: 100%;
+        font-size: 14px;
+        margin-left: -11px;
+      }
+    }
+  }
+  .work-experience-section {
+    margin-top: 8em;
+    h1 {
+      font-size: 3.5em;
+    }
+    .details{
+      h2 {
+        font-size: 46px;
+      }
+      h3{
+        font-size: 27px;
+      }
+      p{
+        width: 100%;
+        font-size: 14px;
+        margin-left: -11px;
+      }
+    }
+  }
+  .projects{
+    margin-top: 8em;
+    h1{
+      font-size: 3.5em;
+    }
+    .project-img{
+      .form-image{
+        width: 300px;
+      }
+    }
+  }
+  .projects .project-details #carouselExampleControls .carousel-inner .carousel-item .row .project-data {
+    margin-left: 0em;
   }
 }
 
@@ -488,6 +596,7 @@ and (orientation: portrait) {
 @media (min-device-height: 667px) and (min-device-width: 375px)
 and (-webkit-min-device-pixel-ratio: 3) {
   .main-profile-part{
+    height: 750px;
     .profile-name{
         margin-top: 50px;
         margin-left: 12px;
@@ -504,12 +613,12 @@ and (-webkit-min-device-pixel-ratio: 3) {
     }
     .profile-buttons {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       margin-top: 50px;
       margin-left: 0px;
       a{
         width: fit-content;
-        margin-right: 0px;
+        margin: 12px;
         padding: 5px;
         margin-bottom: 5px;
       }
@@ -518,7 +627,41 @@ and (-webkit-min-device-pixel-ratio: 3) {
       margin-top: 50px;
       .my-display-image {
         margin: 0px;
+        width: 350px
       }
     }
+  }
+  .work-experience-section {
+    margin-top: 8em;
+    h1 {
+      font-size: 3.5em;
+    }
+    .details{
+      h2 {
+        font-size: 46px;
+      }
+      h3{
+        font-size: 27px;
+      }
+      p{
+        width: 100%;
+        font-size: 14px;
+        margin-left: -5px;
+      }
+    }
+  }
+  .projects{
+    margin-top: 8em;
+    h1{
+      font-size: 3.5em;
+    }
+    .project-img{
+      .form-image{
+        width: 300px;
+      }
+    }
+  }
+  .projects .project-details #carouselExampleControls .carousel-inner .carousel-item .row .project-data {
+    margin-left: 0em;
   }
 }
