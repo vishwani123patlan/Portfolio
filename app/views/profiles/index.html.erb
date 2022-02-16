@@ -1,107 +1,15 @@
-<div class="wrapper main-profile-part">
-  <div class="row">
-    <div class="col-lg-7 col-md-6 col-sm-12">
-      <div class="profile-name">
-        <span>Hii...</span><br>
-        <span>I'M <span class="my-name">VISHWANI</span>!</span>
-      </div>
-      <div class="my-desc">
-        <h6>I am Ruby on Rails Developer, I work  to create morden world websites.</h6>
-      </div>
-      <div class="profile-buttons">
+<div class="main-page">
+  <div class="main-page-profile">
+    <div class="main-text-profile">
+      <h1>Hii...</h1>
+      <h1>I'm <span>VISHWANI!</span></h1>
+      <div class="profiles-button">
         <a href="/about" class="btn">Know More</a>
         <a href="/contact" class="btn">Contact Me </a>
       </div>
     </div>
-    <div class="col-lg-5 col-md-6 col-sm-12">
-      <div class="my-images">
-        <img class="my-display-image" src="<%= asset_path('ProfilePic.png')%>" alt="my-image">
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="wrapper work-experience-section">
-  <h1 class="text-center">WORKING EXPERINCE</h1>
-  <div class="row p-3 work-experience-details">
-    <div class="col-md-5 ps-5 work-image" data-aos="slide-up">
-      <img src="<%= asset_path('working.png') %>" alt="computers-table">
-    </div>
-    <div class="col-md-7 ps-5 mt-5 details">
-      <h2 data-aos="slide-down">SOFTWARE DEVELOPER</h2>
-      <h3 data-aos="slide-down" data-aos-easing="ease-in-out">GKR Info Services Pvt. Ltd (Oct, 2020 - Present)</h3>
-      <p class="mt-4" data-aos="slide-down" data-aos-easing="ease-in-out">
-        Being a developer for 1.6+ years, I have been enjoying this journey in which I had learned, participated, and contributed to the various projects that I have been part of. I believe that actual coding is less than 50% of a developer's work. Right from understanding and analyzing the project requirements, I work on various other things to ensure the success of the project. I believe in solving the issue before I start coding. The design, architecture, plan is vital in creating a great stable, and callable product.<br>
-        <strong>Responsibilities:</strong>
-        Re-write web pages in Ruby using Rails framework. Develop code in MVC architecture. Develop validation methods in models to validate data input by users. Implement Ajax for dynamic updating of the part of a page, avoiding full page refresh. Create partials for blocks of Html code that can be reused. Use of Git.Database migrations with Ruby on Rails and ActiveRecord.<br>
-        • Worked well independently and on a team to solve problems.<br>
-        • Always try to find a way to write reusable code.<br>
-        • Organized and prioritized work to complete assignments in a timely, efficient manner.<br>
-        • Worked to keep clients aware of progress, while offering updated information.<br>
-      </p>
-    </div>
-  </div>
-</div>
-
-<%= render 'project_details' %>
-
-<div class="wrapper education-section">
-  <h1 class="text-center">Education and Qualifications</h1>
-  <div class="education-row mt-4 p-5">
-    <div class="row p-4">
-      <div class="col-md-6 ps-5 col-12">
-       <div class="card text-center" data-aos="flip-up">
-          <div class="card-header">
-            GRADUATION
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Bachelor of Technology</h5>
-            <p class="card-text">Branch Electonics And Communication</p>
-            <h6><strong>Result:</strong> 7.5 CGPA<p>(In scale of 10)</p></h6>
-            <p><strong>Division Awarded: </strong>I-DIV HONS</p>
-          </div>
-          <div class="card-footer text-muted">
-            <span>Session: 2016-2020</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row p-4">
-      <div class="col-6"></div>
-      <div class="col-md-6 ps-5 col-12">
-        <div class="card text-center" data-aos="flip-down">
-          <div class="card-header">
-            INTERMEDIATE
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Science</h5>
-            <p class="card-text">Physics Chemistry Maths (PCM)</p>
-            <h6><strong>Result:</strong> 7.2<p>(In scale of 10)</p></h6>
-            <p><strong>Division Awarded: </strong>I-DIV</p>
-          </div>
-          <div class="card-footer text-muted">
-            <span>Session: 2015-2016</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row p-4">
-      <div class="col-md-6 ps-5 col-12">
-        <div class="card text-center" data-aos="flip-up">
-          <div class="card-header">
-            HIGH SCHOOL
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Science</h5>
-            <p class="card-text">Science Engish Hindi Math Social-Science</p>
-            <h6><strong>Result:</strong> 9.2 CGPA<p>(In scale of 10)</p></h6>
-            <p><strong>Division Awarded: </strong>I-DIV</p>
-          </div>
-          <div class="card-footer text-muted">
-            <span>Session: 2013-2014</span>
-          </div>
-        </div>
-      </div>
+    <div class="profile-image">
+      <img class="my-display-image" src="<%= asset_path('ProfilePic.png')%>" alt="my-image">
     </div>
   </div>
 </div>

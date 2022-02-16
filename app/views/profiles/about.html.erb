@@ -154,14 +154,14 @@
   </div>
   <div class="row">
     <% @projects.each do |project| %>
-      <div class="col-6 text-center mt-4">
+      <div class="col-12 col-md-6 text-center mt-4">
         <div class="project_list">
           <% if project.image_url.present? %>
             <img src="<%= asset_path(project.image_url) %>" alt="project-image" class="mt-2">
           <% else %>
             <img src="<%= asset_path('santaUI.png') %>">
           <% end %>
-          <p><a href="<%= project.url %>" target="_blank"><strong><%= project.name.capitalize %></strong></a></p>
+          <p class="text-center"><a href="<%= project.url %>" target="_blank"><strong><%= project.name.capitalize %></strong></a></p>
         </div>
       </div>
     <% end %>

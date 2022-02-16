@@ -376,6 +376,13 @@ and (-webkit-min-device-pixel-ratio: 2) {
         width: 100%;
       }
     }
+
+    .project_list{
+      img{
+        width: 300px;
+      }
+    }
+
   }
 }
 
@@ -422,6 +429,11 @@ and (orientation: portrait) {
         width: 100%;
       }
     }
+    .project_list{
+      img{
+        width: 300px;
+      }
+    }
   }
 }
 
@@ -466,6 +478,21 @@ and (-webkit-min-device-pixel-ratio: 3) {
       }
       .submit-button{
         width: 100%;
+      }
+    }
+    .project_list{
+      img{
+        width: 300px;
+      }
+    }
+    .work-education{
+      p{
+        line-height: 22px;
+      }
+    }
+    .education-ul{
+      p{
+        line-height: 22px;
       }
     }
   }
