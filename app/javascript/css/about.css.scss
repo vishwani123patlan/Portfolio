@@ -382,8 +382,40 @@ and (-webkit-min-device-pixel-ratio: 2) {
         width: 300px;
       }
     }
-
+    .about_tool_card{
+    display: flex;
+    flex-direction: column;
+      .tool-card{
+        display: flex;
+        border-radius: 20px;
+        margin: 20px;
+        width: 90%;
+      }
+    }
   }
+  .about-page-profile .about-profile-header h4 {
+    margin-right: 30px;
+    font-size: 25px;
+  }
+  .about-page-profile .about-profile-header p {
+    margin-right: 30px;
+    margin-top: 3px;
+    font-size: 11px;
+    font-weight: 400;
+  }
+  .about-page-profile .my-small-img{
+    display: flex;
+    margin-left: -2px;
+    margin-top: -250px;
+  }  
+  .about-page-profile .professional-details {
+      margin-top: 50px;
+  }
+  .about-page-profile .skills-details {
+    margin-top: 50px;
+    margin-left: 10px;
+  }
+
 }
 
 @media screen and (max-device-width: 480px)
@@ -434,6 +466,38 @@ and (orientation: portrait) {
         width: 300px;
       }
     }
+    .about_tool_card{
+      display: flex;
+      flex-direction: column;
+      .tool-card{
+        display: flex;
+        border-radius: 20px;
+        margin: 20px;
+        width: 90%;
+      }
+    }
+  }
+  .about-page-profile .about-profile-header h4 {
+    margin-right: 30px;
+    font-size: 25px;
+  }
+  .about-page-profile .about-profile-header p {
+    margin-right: 30px;
+    margin-top: 3px;
+    font-size: 11px;
+    font-weight: 400;
+  }
+  .about-page-profile .my-small-img{
+    display: flex;
+    margin-left: -2px;
+    margin-top: -250px;
+  }
+  .about-page-profile .professional-details {
+      margin-top: 50px;
+  }
+  .about-page-profile .skills-details {
+    margin-top: 50px;
+    margin-left: 10px;
   }
 }
 
@@ -495,6 +559,37 @@ and (-webkit-min-device-pixel-ratio: 3) {
         line-height: 22px;
       }
     }
+    .about_tool_card{
+    display: flex;
+    flex-direction: column;
+      .tool-card{
+        display: flex;
+        border-radius: 20px;
+        margin: 20px;
+        width: 90%;
+      }
+    }
   }
-
+  .about-page-profile .about-profile-header h4 {
+    margin-right: 30px;
+    font-size: 25px;
+  }
+  .about-page-profile .about-profile-header p {
+    margin-right: 30px;
+    margin-top: 3px;
+    font-size: 11px;
+    font-weight: 400;
+  }
+  .about-page-profile .my-small-img{
+    display: flex;
+    margin-left: -2px;
+    margin-top: -250px;
+  }
+  .about-page-profile .professional-details {
+      margin-top: 50px;
+  }
+  .about-page-profile .skills-details {
+    margin-top: 50px;
+    margin-left: 10px;
+  }
 }
