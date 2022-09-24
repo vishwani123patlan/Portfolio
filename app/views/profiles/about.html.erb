@@ -1,169 +1,48 @@
-<div class="container-fluid about_tag_head">
-  <h1 class="text-center about_titel">ABOUT <span>ME <i class="fas fa-arrow-right"></i></span></h1>
-</div>
-
-<div class="about-page-profile container">
-  <div class="row" data-aos="fade-down">
-      <div class="about-profile-header">
-        <h4>SOFTWARE DEVELOPER</h4>
-        <p>
-          Experienced software developer with a passion for developing innovative programs that
-          expedite the efficiency and effectiveness of organizational success. Well-versed in
-          technology and writing code to create applications that are reliable and user-friendly.
-          Skilled leader who has the proven ability to motivate, educate, and manage a team of
-          professionals to build applications with quality. Confident communicator, strategic thinker,
-          and innovative creator to develop software that is customized to meet a company’s organizational
-          needs, and further their success.
-        </p>
-      </div>
-      <span>
-        <img src="<%= asset_path('about-section.png') %>" alt="vishwani-image" data-aos="fade" class="my-small-img">
-       </span>
-      <div class="row">
-        <div class="col-md-4 professional-details" data-aos="fade-down">
-          <ul>
-            <li>
-              <span><i class="fab fa-black-tie"></i>Experience </span>2Yr
-            </li>
-            <li>
-              <span><i class="fas fa-project-diagram"></i>Projects</span>10
-            </li>
-            <li>
-              <span><i class="fas fa-award"></i>Award</span>2
-            </li>
-          </ul>
+<div class="main-about-page">
+  <%= render 'layouts/navbar' %>
+   <div class="container-fluid ">
+      <div class="row text-center p-1  align-items-center ">
+        <div class="col-2">
+          <%= link_to ('<i class="fa fa-arrow-left"></i>').html_safe, root_path, class:"mx-5 text-white fs-2 align-items-start "%> 
         </div>
-        <div class="col-md-8 skills-details" data-aos="fade-up">
-          <h4 class="text-center" align="right">SKILLS<h4>
-          <div class="row">
-            <% @skills.each do |skill| %>
+        <div class="col-8">
+          <h2 class="text-center">ABOUT ME</h2>    
+        </div>
+      </div>
+    </div>
+      <hr class="featurette-divider mx-5 text-light">
+        <div class="container text-center ">
+           <div class="row featurette">
               <div class="col-md-6">
-                <p><%= skill.skill_name %></p>
+                <h4 class="featurette-heading text-light fs-1 fw-bold my-5">Hello, I'M Vishwani Patlan Full Stack Developer From Delhi, India!</h4>
+                <p class="lead fs-3 fst-italic my-5">
+              Experienced software developer with a passion for developing innovative programs that
+              expedite the  efficiency and effectiveness of organizational success. Well-versed in
+              technology and writing code to create applications that are reliable and user-friendly.
+              Skilled leader who has the proven ability to motivate, educate, and manage a team of
+              professionals to build applications with quality. Confident communicator, strategic thinker,
+              and innovative creator to develop software that is customized to meet a company’s organizational
+              needs, and further their success.
+            </p>
               </div>
-            <% end %>
+              <div class="col-md-6">
+                <img class="bd-placeholder-img"style= "width: 600px; height: 600px;" src="<%= asset_path('ProfilePic.png') %>" alt="vishwani-image" > 
+              </div>
+           </div>
+        </div>
+      <hr class="featurette-divider mx-5 text-light">
+      <div class="more-btn">
+        <%= render 'exeperince_education'%>
+        <div class="main-profile-btn">
+          <div class="profiles-button">
+              <a href="/software" class="btn">Software Info</a>
           </div>
         </div>
+        <div class="main-profile-btn">
+          <div class="profiles-button">
+              <a href="/projects" class="btn">Projects</a>
+          </div>
+        </div> 
       </div>
-
-  </div>
-</div>
-
-<div class="container tools-technology">
-  <div class="tools-tech-header">
-    <h2 class="text-center">TOOLS AND TECHNOLOGIES</h2>
-  </div>
-  <div class="about_tool_card">
-    <div class="card tool-card">
-          <div class="img1"><img class="tool_background" src="<%= asset_path('back4.png') %>"></div>
-          <div class="img2"><img class="tools_size " src="<%= asset_path('github.png') %>"></div>
-      <div class="card-body">
-        <h2 class="card-title text-center">GITHUB</h2>
-      </div>
-    </div>
-
-    <div class="card tool-card">
-      <div class="img1">
-        <img class="tool_background" src="<%= asset_path('back2.png') %>">
-      </div>
-      <div class="img2">
-        <img class="tools_size  vscode_img" src="<%= asset_path('vscode.png') %>">
-      </div>
-      <div class="card-body">
-        <h2 class="card-title text-center">VS CODE</h2>
-      </div>
-    </div>
-
-    <div class="card tool-card" >
-      <div class="img1">
-        <img class="tool_background" src="<%= asset_path('back1.png') %>">
-      </div>
-      <div class="img2">
-        <img class="tools_size " src="<%= asset_path('sublime.png') %>">
-      </div>
-      <div class="card-body">
-        <h2 class="card-title text-center">SUBLIME TEXT</h2>
-      </div>
-    </div>
-
-    <div class="card tool-card">
-      <div class="img1">
-        <img class="tool_background" src="<%= asset_path('back3.png') %>">
-      </div>
-      <div class="img2">
-        <img class="tools_size" src="<%= asset_path('jira.png') %>">
-      </div>
-      <div class="card-body">
-        <h2 class="card-title  text-center">JIRA</h2>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<div class="container tools-technology">
-  <div class="tools-tech-header">
-    <h2 class="text-center">EXEPERINCE & EDUCATION</h2>
-  </div>
-  <div class="work-education row">
-    <div class="col-sm-12 col-md-6 col-lg-6">
-      <ul class="work-ul">
-        <span><div class="icon">
-        <i class="fa fa-briefcase"></i></div><li class="work-experience-education">
-          <span><p>2020-Present</p></span>
-          <h4>Sofwatre Developer - <small>GRK Info Services Pvt Ltd</small></h4>
-          <p>
-            <ul>
-              <li>Work on MVC Model View Controller architecture and frameworks.</li>
-              <li>Re-write web pages in Ruby using Rails framework.</li>
-              <li>Implement Ajax for dynamic updating of the part of a page, avoiding full page refresh.</li>
-              <li>Develop validation methods in models to validate data input by users.</li>
-              <li>Involved in gathering user requirements, system analysis, design, development, testing and implementation.</li>
-              <li>Use of Git and GitHub repositories.</li>
-              <li>Strong knowledge using the CRUD , create, read, update and delete methodology.</li>
-            </ul>
-          </p>
-        </li></span>
-      </ul>
-    </div>
-    <div class="col-sm-12 col-md-6 col-lg-6">
-      <ul class="education-ul">
-        <span><div class="icon"><i class="fa fa-briefcase"></i></div><li class="work-experience-education">
-          <span><p>2020</p></span>
-          <h4>ENGINEERING DEGREE - Uttar Pradesh Technical University</h4>
-          <p>Complete engineering in Electronics and Communication</p>
-        </li></span>
-        <span><div class="icon"><i class="fa fa-briefcase"></i></div><li class="work-experience-education">
-          <span><p>2016</p></span>
-          <h4>INTERMEDIATE - Lal Dayal Public School</h4>
-          <p>Complete intermediate with PCM</p>
-        </li></span>
-        <span><div class="icon"><i class="fa fa-briefcase"></i></div><li class="work-experience-education">
-          <span><p>2014</p></span>
-          <h4>HIGH SCHOOL - Shri Ram Public School</h4>
-          <p>Complete my schooling with subjects like Maths, Science, English, Hindi, Social Sciene</p>
-        </li></span>
-      </ul>
-    </div>
-  </div>
-</div>
-
-
-<div class="container tools-technology">
-  <div class="tools-tech-header">
-    <h2 class="text-center">PROJECTS</h2>
-  </div>
-  <div class="row">
-    <% @projects.each do |project| %>
-      <div class="col-12 col-md-6 text-center mt-4">
-        <div class="project_list">
-          <% if project.image_url.present? %>
-            <img src="<%= asset_path(project.image_url) %>" alt="project-image" class="mt-2">
-          <% else %>
-            <img src="<%= asset_path('santaUI.png') %>">
-          <% end %>
-          <p class="text-center"><a href="<%= project.url %>" target="_blank"><strong><%= project.name.capitalize %></strong></a></p>
-        </div>
-      </div>
-    <% end %>
-  </div>
+    </div>  
 </div>

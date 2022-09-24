@@ -3,7 +3,7 @@
       <div class="container-fluid ">
       <div class="row text-center  align-items-center ">
         <div class="col-12">
-          <%= link_to ('<i class="fa fa-arrow-left"></i>').html_safe, posts_path, class:"mx-5 text-white fs-1 align-items-start "%> 
+          <%= link_to ('<i class="fa fa-arrow-left"></i>').html_safe, software_index_path, class:"mx-5 text-white fs-1 align-items-start "%> 
         </div>
       </div>
     </div>
@@ -11,16 +11,16 @@
       <div class="container-fluid text-center my-5 mx-5">
          <div class="row featurette">
             <div class="col-md-6">
-              <h2 class="featurette-heading"><%= @post.title %></h2>
-              <p class="lead fs-1 fst-italic my-4"><%= @post.description %></p>
+              <h2 class="featurette-heading"><%= @software.name %></h2>
+              <i><p class="lead fs-3 fst-italic my-4"><%= @software.about %></p></i>
             </div>
             <div class="col-md-6">
-              <% if @post.image.attached? %>
-                 <%= image_tag @post.image, class:"bd-placeholder-img", style: "width: 500px; height: 500px;" %>
+              <% if @software.image.attached? %>
+                 <%= image_tag @software.image, class:"bd-placeholder-img", style: "width: 500px; height: 500px;" %>
                 <%end%> 
             </div>
          </div>
       </div>
    <hr class="featurette-divider mx-5 text-light">
     </div>  
-</div>   
+</div>

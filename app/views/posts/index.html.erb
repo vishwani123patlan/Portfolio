@@ -1,33 +1,39 @@
-<p id="notice"><%= notice %></p>
-
-<h1>Posts</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Description</th>
-      <th>Likes</th>
-      <th>Dislikes</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @posts.each do |post| %>
-      <tr>
-        <td><%= post.title %></td>
-        <td><%#= post.description %></td>
-        <td><%= image_tag(post.image.present? ? post.image : "", style: "width: 100%;") %>") %></td>
-        <td><%= post.image %></td>
-        <td><%= link_to 'Show', post %></td>
-        <td><%= link_to 'Edit', edit_post_path(post) %></td>
-        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
+<div class="main-about-page">
+  <div><%= render 'layouts/navbar' %></div>
+    <div class="container-fluid ">
+      <div class="row text-center p-1  align-items-center ">
+        <div class="col-2">
+          <%= link_to ('<i class="fa fa-arrow-left"></i>').html_safe, root_path, class:"mx-5 text-white fs-2 align-items-start "%> 
+        </div>
+        <div class="col-8">
+          <h2 class="text-center">BLOGS</h2>    
+        </div>
+      </div>
+    </div>
+    <hr class="featurette-divider mx-5 text-light">
+      <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <% @posts.each do |post|%>
+          <div class="col">
+            <div class="card shadow-sm">
+              <% if post.image.attached? %>
+                 <%= image_tag post.image, class:"bd-placeholder-img", style: "width: 100%; height: 225px;" %>
+                <%end%><text class="text-center fs-3 fw-bold"><%= post.title %></text>
+              <div class="card-body">
+                <p class="card-text fst-italic"><%= truncate(strip_tags(post.description.to_plain_text),length: 120)%></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                     <%= link_to "View", post_path(post.id), class: "btn btn-outline-dark" %>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        <%end%>
+      </div>
+    </div>
+  <hr class="featurette-divider mx-5 text-light"> 
+  </div> 
+</div>
 <%= link_to 'New Post', new_post_path %>

@@ -8,6 +8,7 @@ class SkillsController < ApplicationController
 
   # GET /skills/1 or /skills/1.json
   def show
+    @skills = Skill.all
   end
 
   # GET /skills/new
@@ -22,7 +23,6 @@ class SkillsController < ApplicationController
   # POST /skills or /skills.json
   def create
     @skill = Skill.new(skill_params)
-
     respond_to do |format|
       if @skill.save
         format.html { redirect_to @skill, notice: "Skill was successfully created." }
@@ -64,6 +64,6 @@ class SkillsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def skill_params
-      params.require(:skill).permit(:skill_name, :level, :skill_type)
+      params.require(:skill).permit(:skill_name, :about, :image)
     end
 end

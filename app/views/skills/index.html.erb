@@ -1,31 +1,30 @@
-<p id="notice"><%= notice %></p>
-
-<h1>Skills</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Skill name</th>
-      <th>Level</th>
-      <th>Skill type</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @skills.each do |skill| %>
-      <tr>
-        <td><%= skill.skill_name %></td>
-        <td><%= skill.level %></td>
-        <td><%= skill.skill_type %></td>
-        <td><%= link_to 'Show', skill %></td>
-        <td><%= link_to 'Edit', edit_skill_path(skill) %></td>
-        <td><%= link_to 'Destroy', skill, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Skill', new_skill_path %>
+<div class="main-about-page">
+  <%= render 'layouts/navbar' %>
+    <div class="container-fluid ">
+      <div class="row text-center p-1  align-items-center ">
+        <div class="col-2">
+          <%= link_to ('<i class="fa fa-arrow-left"></i>').html_safe, root_path, class:"mx-5 text-white fs-2 align-items-start "%> 
+        </div>
+        <div class="col-8">
+          <h2 class="text-center">MY SKILLS</h2>    
+        </div>
+      </div>
+    </div>
+      <hr class="featurette-divider mx-5 text-light">
+        <div class="container marketing mb-5">
+          <div class="row text-center">
+            <% @skills.each do |s|%>
+              <div class="col-lg-4 my-5">
+                <% if s.image.attached? %>
+                    <%= image_tag s.image,class:"bd-placeholder-img rounded-circle", style: "width: 180px; height: 180px;" %>
+                  <%end%>
+                <h2><%= s.skill_name %></h2>
+                <p><%= truncate(strip_tags(s.about),length: 120) %></p>
+                <%= link_to "View »", skill_path(s.id), class: "btn btn-outline-light d-grid gap-2 d-md-block" %>
+              </div><!-- /.col-lg-4 -->
+            <%end%>
+          </div>
+        </div>
+      <hr class="featurette-divider mx-5 text-light">  
+    </div>  
+</div>
