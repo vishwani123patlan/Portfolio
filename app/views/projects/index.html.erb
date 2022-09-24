@@ -1,16 +1,16 @@
-<div class="main-about-page">
-  <%= render 'layouts/navbar' %>
-    <div class="container-fluid ">
-      <div class="row text-center p-1  align-items-center ">
-        <div class="col-2">
-          <%= link_to ('<i class="fa fa-arrow-left"></i>').html_safe, root_path, class:"mx-5 text-white fs-2 align-items-start "%> 
-        </div>
-        <div class="col-8">
-          <h2 class="text-center">PROJECTS</h2>    
-        </div>
+<div class="main-page">
+  <div><%= render 'layouts/navbar' %></div>
+  <div class="container-fluid my-3 shadow-lg bg-light ">
+    <div class="row text-center px-3 align-items-center py-3">
+      <div class="col-2 ">
+        <%= link_to ('<i class="fa fa-arrow-left"></i>').html_safe, root_path, class:"mx-5 text-dark fs-1 align-items-start "%>
+      </div>
+      <div class="col-8">
+        <h2 class="text-dark">Projects</h2>
       </div>
     </div>
-    <hr class="featurette-divider mx-5 text-light">
+  </div>
+  <hr class="featurette-divider mx-5 text-light">
       <div class="container marketing my-5">
         <div class="row text-center">
           <% @projects.each do |project| %>
@@ -22,12 +22,11 @@
               <h2><%= project.name%></h2>
               <p><%#= truncate(strip_tags(project.about),length: 120) %></p>
               <p><%= project.url %></p>
-              <p><a class="btn btn-outline-light" href="https://www.facebook.com/">View »</a></p>
+              <p><a class="btn btn-outline-light" href="#">View »</a></p>
             </div><!-- /.col-lg-4 -->
           <%end%>
         </div><!-- /.row -->
       </div>
       </div>
-  </div>  
 </div>
 <%= link_to 'New Project', new_project_path %>

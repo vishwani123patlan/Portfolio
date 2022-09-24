@@ -1,16 +1,16 @@
-<div class="main-about-page">
-  <%= render 'layouts/navbar' %>
-    <div class="container-fluid ">
-      <div class="row text-center p-1  align-items-center ">
-        <div class="col-2">
-          <%= link_to ('<i class="fa fa-arrow-left"></i>').html_safe, root_path, class:"mx-5 text-white fs-2 align-items-start "%> 
-        </div>
-        <div class="col-8">
-          <h2 class="text-center">SOCIAL HANDLES</h2>    
-        </div>
+<div class="main-page">
+  <div><%= render 'layouts/navbar' %></div>
+  <div class="container-fluid my-3 shadow-lg bg-light ">
+    <div class="row text-center px-3 align-items-center py-3">
+      <div class="col-2 ">
+        <%= link_to ('<i class="fa fa-arrow-left"></i>').html_safe, root_path, class:"mx-5 text-dark fs-1 align-items-start "%>
+      </div>
+      <div class="col-8">
+        <h2 class="text-dark">SOCIAl HANDLES</h2>
       </div>
     </div>
-    <hr class="featurette-divider mx-5 text-light">
+  </div>
+  <hr class="featurette-divider mx-5 text-light">
       <div class="container marketing my-5">
 
         <!-- Three columns of text below the carousel -->
@@ -62,6 +62,5 @@
           </div><!-- /.col-lg-4 -->
         </div><!-- /.row -->
       </div>
-      </div>
-  </div>  
-</div>
+      <hr class="featurette-divider mx-5 text-light">
+</div>  

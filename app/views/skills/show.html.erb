@@ -1,33 +1,29 @@
 <div class="main-about-page">
    <%= render 'layouts/navbar' %>
-      <div class="container-fluid ">
-         <div class="row text-center  align-items-center ">
-            <div class="col-2">
-               <%= link_to ('<i class="fa fa-arrow-left"></i>').html_safe, skills_path, class:"mx-1 text-white fs-2 align-items-start "%> 
-            </div>
-            <div class="col-10">
-               <div class="btn-group p-1 col-md-10" role="group" aria-label="Basic outlined example">
-                  <% @skills.each do |s|%>
-                     <%= link_to s.skill_name, skill_path(s.id),class:"btn btn-outline-light mx-1 rounded-pill" %>
-                  <%end%>
-               </div> 
-            </div>
-         </div>
+<div class="container-fluid my-3 shadow-lg bg-light">
+    <header class="d-flex justify-content-between py-3">
+      <%= link_to ('<i class="fa fa-arrow-left"></i>').html_safe, root_path, class:"mx-5 text-dark fs-4 align-items-start "%>
+      <ul class="nav nav-pills ">
+         <% @skills.each do |s|%>
+         <li class="nav-item"><%= link_to s.skill_name, skill_path(s.id),class:"btn btn-outline-dark mx-3 rounded-pill" %></li>
+        <%end%>   
+      </ul>
+    </header>
+ </div>
+
+<hr class="featurette-divider mx-5 text-light">
+    <div class="container bg-light my-5 rounded-3 border shadow">
+      <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center ">
+        <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+          <h1 class="text-dark fw-bold lh-1"><%= @skill.skill_name %></h1>
+          <p class="lead fs-3 fst-italic my-5"><%= @skill.about %></p>
+        </div>
+        <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden ">
+            <% if @skill.image.attached? %>
+                    <%= image_tag @skill.image, class:"bd-placeholder-img", style: "width: 500px; height: 500px;" %>
+                <%end%>
+        </div>
       </div>
-   <hr class="featurette-divider mx-5 text-light">
-      <div class="container-fluid text-center my-5 mx-5">
-         <div class="row featurette">
-            <div class="col-md-6">
-              <h2 class="featurette-heading"><%= @skill.skill_name %></h2>
-              <i><p class="lead fs-3 fst-italic my-4"><%= @skill.about %></p></i>
-            </div>
-            <div class="col-md-6">
-              <% if @skill.image.attached? %>
-                 <%= image_tag @skill.image, class:"bd-placeholder-img", style: "width: 500px; height: 500px;" %>
-                <%end%> 
-            </div>
-         </div>
-      </div>
-   <hr class="featurette-divider mx-5 text-light">
-    </div>  
 </div>
+<hr class="featurette-divider mx-5 text-light">
+  

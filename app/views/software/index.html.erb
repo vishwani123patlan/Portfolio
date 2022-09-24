@@ -1,30 +1,29 @@
-<div class="main-about-page">
-      <%= render 'layouts/navbar' %>
-      	<div class="container-fluid ">
-		      <div class="row text-center p-1  align-items-center ">
-		        <div class="col-2">
-		          <%= link_to ('<i class="fa fa-arrow-left"></i>').html_safe, root_path, class:"mx-5 text-white fs-2 align-items-start "%> 
-		        </div>
-		        <div class="col-8">
-		          <h2 class="text-center">SOFTWARE INFO</h2>  
-		        </div>
-		      </div>
-    		</div>
-    	<hr class="featurette-divider mx-5 text-light">
+<div class="main-page">
+  <div><%= render 'layouts/navbar' %></div>
+  <div class="container-fluid my-3 shadow-lg bg-light ">
+    <div class="row text-center px-3 align-items-center py-3">
+      <div class="col-2 ">
+        <%= link_to ('<i class="fa fa-arrow-left"></i>').html_safe, root_path, class:"mx-5 text-dark fs-1 align-items-start "%>
+      </div>
+      <div class="col-8">
+        <h2 class="text-dark">SOFTWARE INFO</h2>
+      </div>
+    </div>
+  </div>
+  <hr class="featurette-divider mx-5 text-light">
       	<div class="container marketing my-5">
         	<div class="row text-center">
         		<% @softwares.each do |software|%>
 	          		<div class="col-lg-4 ">
 	          			<% if software.image.attached? %>
-	                 		<%= image_tag software.image,class:"bd-placeholder-img rounded-circle", style: "width: 180px; height: 180px;" %>
-	                	<%end%>
+	                 			<%= image_tag software.image,class:"bd-placeholder-img rounded-circle", style: "width: 180px; height: 180px;" %>
+	                		<%end%>
 	            		<h2><%= software.name %></h2>
 	            		<p><%= truncate(strip_tags(software.about),length: 120) %></p>
 	            		<%= link_to "View »", software_path(software.id), class: "btn btn-outline-light" %>
 	          		</div><!-- /.col-lg-4 -->
           		<%end%>
-      		</div>
       	</div>
-      	<hr class="featurette-divider mx-5 text-light">
-  	</div>  
-</div>
+      	</div>
+      <hr class="featurette-divider mx-5 text-light">
+</div>  

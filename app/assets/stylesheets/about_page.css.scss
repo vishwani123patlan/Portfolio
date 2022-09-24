@@ -47,19 +47,18 @@
       justify-content: space-around;
     }
 }
-span button{ 
-    font-size: 25px;
-    color: black;
-    padding: 0.7em;
-    font-weight: bold;
-    border: none;
-    background: white;
-    border-radius: 50px;
-    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
-}
+
 .modal-title{
   text-align: center;
 }
 .modal-body{
   background-image: linear-gradient(to bottom, #ffffff, #e6dde9, #d6bacb, #c997a4, #b77676);
+}
+
+#software{
+  background-image: url('shiv.jpg');
+}
+
+#project{
+  background-image: url('shiv.jpg');
 }
