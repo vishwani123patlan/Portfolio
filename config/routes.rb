@@ -4,8 +4,8 @@ Rails.application.routes.draw do
   resources :skills
   resources :posts
   resources :social_handles, only: [:index]
-  resources :contact, only: [:index] 
-  post '/send_message', to: 'contact#send_message'
+  resources :contact, only: [:index, :new, :create] 
+  #post '/send_message', to: 'contact#send_message'
   devise_for :users
   get 'profiles/index'
   root to: "profiles#index"

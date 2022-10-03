@@ -58,19 +58,23 @@ Rails.application.configure do
   #   location: '/usr/sbin/sendmail',
   #   arguments: '-i'
   # }
-  #config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.raise_delivery_errors = true
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
-  #config.action_mailer.perform_deliveries = true
+  config.action_mailer.perform_deliveries = true
   #config.action_mailer.default :charset => “utf-8”
-  #config.action_mailer.delivery_method = :smtp
-  # config.action_mailer.smtp_settings = {
-  #   address: ‘smtp.gmail.com’,
-  #   port: 587,
-  #   user_name: Rails.application.credentials.smtp[:SMTP_USERNAME],
-  #   password: Rails.application.credentials.smtp[:SMTP_PASSWORD],
-  #   authentication: :plain,
-  #   enable_starttls_auto: true
-  # }
+  config.action_mailer.delivery_method = :smtp
+
+
+  config.action_mailer.smtp_settings = {
+    enable_starttls_auto: true,
+    address: 'smtp.gmail.com',
+    port: 587,
+    user_name: ENV['SMTP_USERNAME'],
+    password:  ENV['SMTP_PASSWORD'],
+    authentication: :plain,
+    enable_starttls_auto: true
+  }
+
   # Debug mode disables concatenation and preprocessing of assets.
   # This option may cause significant delays in view rendering with a large
   # number of complex assets.

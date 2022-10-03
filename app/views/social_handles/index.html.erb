@@ -3,10 +3,13 @@
   <div class="container-fluid my-3 shadow-lg bg-light ">
     <div class="row text-center px-3 align-items-center py-3">
       <div class="col-2 ">
-        <%= link_to ('<i class="fa fa-arrow-left"></i>').html_safe, root_path, class:"mx-5 text-dark fs-1 align-items-start "%>
+        <%= link_to ('<i class="fa fa-arrow-left"></i>').html_safe, root_path, class:"text-dark fs-1 align-items-start "%>
       </div>
       <div class="col-8">
         <h2 class="text-dark">SOCIAl HANDLES</h2>
+      </div>
+      <div class="col-2">
+        <img src="<%=asset_path('social.png')%>" style= "width: 60px; height: 60px;" >
       </div>
     </div>
   </div>

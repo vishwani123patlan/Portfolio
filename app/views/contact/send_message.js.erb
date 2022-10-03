@@ -1,9 +1,0 @@
-<% if @mail_send %>
-  $('#success-mail-alert').show();
-  $('#success-mail-alert').fadeOut(6000);
-  $("#contact-form-section").html('<%= j render partial: 'contact/contact_form'%>');
-<% else %>
-  $('#fail-mail-alert').show();
-  $('#fail-mail-alert').fadeOut(6000);
-  $("#contact-form-section").html('<%= j render partial: 'contact/contact_form'%>');
-<% end %>

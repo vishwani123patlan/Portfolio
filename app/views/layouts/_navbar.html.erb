@@ -1,12 +1,12 @@
 <nav class=" container-fluid navbar navbar-expand-lg bg-light py-3 my-4 border shadow" style=" border-radius: 12px; width: 97%;" >
-  <div class="container-fluid">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+  <div class="container-fluid d-flex justify-content-md-between">
+    <button class="navbar-toggler text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation" style="border: 2px solid black;">
+      <span class="navbar-toggler-icon" style="color: black;"></span>
     </button>
-      <div class="collapse navbar-collapse justify-content-md-between" id="navbarsExample08">
-        <a href="<%= root_path %>">
-          <img src="<%=asset_path('vp.png')%>" style= "width: 64px; height: 64px; border-radius: 50%;">
-        </a>
+      <a href="<%= root_path %>">
+        <img src="<%=asset_path('vp.png')%>" style= "width: 64px; height: 64px; border-radius: 50%;">
+      </a>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarsExample08">
         <ul class="navbar-nav fs-4 fw-bold">
           <li class="nav-item mx-4">
             <a class="nav-link text-dark" aria-current="page" href="/">Home</a>
@@ -15,13 +15,14 @@
             <a class="nav-link text-dark" href="/projects">Projects</a>
           </li>
           <li class="nav-item mx-4">
-            <a class="nav-link text-dark"href="/skills">Skills</a>
+            <a class="nav-link text-dark"href="/posts">Blogs</a>
+          </li>
+          <!--   -->
+          <li class="nav-item mx-4">
+            <a class="nav-link text-dark"href="/contact/new">Contact Me</a>
           </li>
           <li class="nav-item mx-4">
-            <a class="nav-link text-dark"href="/about">About Me</a>
-          </li>
-          <li class="nav-item mx-4">
-            <a class="nav-link text-dark"href="/contact">Contact</a>
+            <a class="nav-link text-dark"href="/social_handles">Social Handles</a>
           </li>
         </ul>
       </div>

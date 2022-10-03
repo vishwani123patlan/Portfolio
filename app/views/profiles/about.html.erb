@@ -3,10 +3,13 @@
   <div class="container-fluid my-3 shadow-lg bg-light ">
     <div class="row text-center px-3 align-items-center py-3">
       <div class="col-2 ">
-        <%= link_to ('<i class="fa fa-arrow-left"></i>').html_safe, root_path, class:"mx-5 text-dark fs-1 align-items-start "%>
+        <%= link_to ('<i class="fa fa-arrow-left"></i>').html_safe, root_path, class:"text-dark fs-1 align-items-start "%>
       </div>
       <div class="col-8">
         <h2 class="text-dark">ABOUT ME</h2>
+      </div>
+      <div class="col-2">
+        <img src="<%=asset_path('about_logo.png')%>" style= "width: 60px; height: 60px;" >
       </div>
     </div>
   </div>
@@ -82,28 +85,30 @@
   <hr class="featurette-divider mx-5 text-light">
 
   <div class="container px-4 py-5" id="custom-cards">
-    <h2 class="pb-2 border-bottom text-center">More About Me</h2>
-      <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+    <h2 class="pb-2 border-bottom text-white">About My knowledge</h2>
 
-      <a href="/software" class="text-decoration-none">
-        <div class="col">
-          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"id="software">
+    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+      <div class="col">
+        <a href="/software" class="text-decoration-none">
+          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" >
             <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-              <h3 class="pt-5 mt-5 mb-4 display-3 lh-1 fw-bold text-white">Software Info</h3>
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-dark">Software Info</h3>
             </div>
           </div>
-        </div>
-      </a>
+        </a>  
+      
+      </div>
 
-      <a href="/projects" class="text-decoration-none">
-        <div class="col">
-          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"id="project">
-            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-              <h3 class="pt-5 mt-5 mb-4 display-3 lh-1 fw-bold text-white">Projects</h3>
-           </div>
+      <div class="col">
+        <a href="/skills" class="text-decoration-none">
+          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" >
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-dark">Skills & Knowledge</h3>
+            </div>
           </div>
-        </div>
-      </a>
+        </a>
+      
+      </div>
 
     </div>
   </div>

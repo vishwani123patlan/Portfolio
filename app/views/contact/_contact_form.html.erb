@@ -1,19 +1,19 @@
-<%= form_tag("/send_message", :method => "post", remote: true) do %>
-  <div class="row">
+<%= form_with(model: @contact, url: '/contact', method: :post) do |f|%>  
+<div class="row">
     <div class="col-md-6 col-lg-6 field">
-      <%= text_field_tag :name,'', class: 'form-control', placeholder: 'YOUR NAME', required: true %>
+      <%= f.text_field :name, class: 'form-control bg-light', placeholder: 'YOUR NAME', required: true %>
     </div>
     <div class="col-md-6 col-lg-6 field">
-      <%= email_field_tag :email,'', class: 'form-control', placeholder: 'YOUR EMAIL', required: true %>
+      <%= f.email_field :email, class: 'form-control bg-light', placeholder: 'YOUR EMAIL', required: true %>
     </div>
     <div class="col-md-12 col-lg-12 field">
-      <%= text_field_tag :subject,'', class: 'form-control', placeholder: 'YOUR SUBJECT' %>
+      <%= f.text_field :subject, class: 'form-control bg-light', placeholder: 'YOUR SUBJECT' %>
     </div>
     <div class="col-md-12 col-lg-12 field">
-      <%= text_area_tag :message,'', class: 'form-control form-message', placeholder: 'YOUR MESSAGE', required: true %>
+      <%= f.text_area :message, class: 'form-control form-message bg-light', placeholder: 'YOUR MESSAGE', required: true %>
     </div>
     <div class="col-md-12 col-lg-12 submit-button">
-      <%= button_tag 'Send Message', class: 'btn w-100' %>
+      <%= f.submit 'Send Message', class: 'btn w-100' %>
     </div>
   </div>
 <% end %>
